@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">KnotTracker</string>
+    <string name="home">Home</string>
+    <string name="knots">Knots</string>
+    <string name="about">About</string>
+    <string name="profile">Profile</string>
+    <string name="current_knots">Current knots</string>
+    <string name="knot_goals">Knot goals</string>
+    <string name="completed_knots">Completed knots</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="splash">splash</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
+    <string name="logo">Logo</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register_reg">Register</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="login">Login</string>
+    <string name="knot_categories">Knot Categories</string>
+
+    <string name="the_6_basic_knots">The 6 Basic Knots</string>
+    <string name="hitches">Hitches</string>
+    <string name="whipping">Whipping</string>
+    <string name="knot_goal_list">Knot Goal List</string>
+    <string name="lashings">Lashings</string>
+    <string name="generalKnots">General Knots</string>
+    <string name="about_text_body">KnotTracker is a knot tracking application created with the purpose of providing scouts and outdoor enthusiasts alike with a means of learning their favourite knots.\n\n Users can learn knots of varying difficulty through watching the provided video tutorials, allowing them to keep track of their completion status while earning achievements for their efforts throughout</string>
+    <string name="developed_by_brightsolutions">Developed by BrightSolutions</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="please_login_with_the_correct_username_and_password_associated_with_your_account">Please login with the correct username and password associated with your account :)</string>
+    <string name="favourite_knots">Favourite Knots</string>
+    <string name="please_fill_in_the_following_fields_then_click_register_to_create_an_account">Please fill in the following fields, then click register to create an account :)</string>
+    <string name="knot_list">Knot list</string>
+    <string name="the_knot_list_is_visible_for_those_not_wanting_to_create_an_account">Note that the knot list is visible for those not wanting to create an account</string>
+    <string name="completion_status">Completion status:</string>
+    <string name="the_following_list_displays_all_available_knots_within_knottracker_n_nplease_note_that_a_registered_account_is_required_for_knot_tracking_and_other_features">The following list displays all available knots within KnotTracker.\n\nPlease note that a registered account is required for knot tracking and other features</string>
+    <string name="login_to_begin_tracking">Login to begin tracking!</string>
+    <string name="get_ready_to">Get ready to:</string>
+    <string name="track_your_favourite_knots_n_n_track_the_completion_status_of_your_knot_n_n_add_knots_to_a_goal_list_n_n_learn_step_by_step_how_to_do_the_knots_with_embedded_video_tutorials_n_n_n_nstart_your_pioneering_journey_with_knottracker">- Track your favourite knots!\n\n- Track the completion status of your knot!\n\n-Add knots to a goal list!\n\n- Learn step by step how to do the knots with embedded video tutorials!\n\n\n\nStart your pioneering journey with KnotTracker!</string>
+    <string name="key_for_knot_statuses">Key for knot statuses</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="complete">Complete</string>
+    <string name="unfavourited">Unfavourited</string>
+    <string name="favourited">Favourited</string>
+    <string name="on_goal_list">On goal list</string>
+    <string name="being_completed">Being completed</string>
+    <string name="not_on_list">Not on list</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="please_sign_in_with_a_registered_account_below_or_register_a_new_knottracker_account_to_continue">Please sign in with a registered account below, or register a new KnotTracker account to continue :)</string>
+
+</resources>

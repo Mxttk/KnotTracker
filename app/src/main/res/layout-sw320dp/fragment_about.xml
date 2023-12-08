@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/about_bg"
+    android:orientation="vertical"
+    tools:context=".AboutFragment"
+    tools:ignore="Overdraw">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/home_header_text"
+        android:elevation="10dp"
+        android:fontFamily="@font/oxanium_bold"
+        android:padding="8dp"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:textColor="@color/scouts_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine12percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine70percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine30percent"
+        app:layout_constraintTop_toTopOf="@id/horizontalGuideLine2percent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/home_header_text"
+        android:elegantTextHeight="true"
+        android:elevation="10dp"
+        android:fontFamily="@font/oxanium_bold"
+        android:lineHeight="16dp"
+        android:padding="2dp"
+        android:text="@string/about_text_body"
+        android:textAlignment="center"
+        android:textColor="@color/scouts_purple"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine65percent"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideLine95percent"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideLine5percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine15percent"
+        tools:ignore="VisualLintLongText,TextContrastCheck"
+        tools:targetApi="p" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/home_header_text"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalGuideLine98percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine95percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine5percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine68percent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/key_for_knot_statuses"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/check_empty"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/check_full"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/heart"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/heart_filled"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="2dp"
+                    android:text="@string/incomplete"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="4dp"
+                    android:text="@string/complete"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="5dp"
+                    android:text="@string/unfavourited"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="6dp"
+                    android:text="@string/favourited"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="VisualLintBounds,TextSizeCheck,TextContrastCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/add_to_list"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/playlist_started"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/confirm_on_list"
+                    tools:ignore="ContentDescription,VisualLintBounds" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="3dp"
+                    android:text="@string/not_on_list"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="5dp"
+                    android:text="@string/being_completed"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/oxanium_bold"
+                    android:paddingTop="5dp"
+                    android:text="@string/on_goal_list"
+                    android:textColor="@color/scouts_purple"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Vertical Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine5percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine30percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine70percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine95percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+
+    <!-- Horizontal Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine2percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine12percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine15percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine65percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine68percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine98percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

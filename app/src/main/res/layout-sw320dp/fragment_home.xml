@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/home_bg"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/textViewWelcomeUser"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/home_header_text"
+        android:elevation="10dp"
+        android:fontFamily="@font/oxanium_bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="1dp"
+        android:textColor="@color/scouts_purple"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalGuideLine10percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine75percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine25percent"
+        app:layout_constraintTop_toTopOf="@id/horizontalGuideLine3percent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:text="@string/get_ready_to"
+        android:elevation="10dp"
+        android:padding="14dp"
+        android:textSize="22sp"
+        android:textColor="@color/purple_200"
+        android:fontFamily="@font/oxanium_bold"
+        android:background="@drawable/title_bg"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalGuideLine30percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine95percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine5percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine15percent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:text="@string/track_your_favourite_knots_n_n_track_the_completion_status_of_your_knot_n_n_add_knots_to_a_goal_list_n_n_learn_step_by_step_how_to_do_the_knots_with_embedded_video_tutorials_n_n_n_nstart_your_pioneering_journey_with_knottracker"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/scouts_purple"
+        android:fontFamily="@font/oxanium_bold"
+        android:background="@drawable/home_text"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalGuideLine90percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine95percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine5percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine30percent" />
+
+    <!-- Vertical Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine5percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05109489" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine25percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine75percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine95percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <!-- Horizontal Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine3percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine10percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine15percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15043157" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine30percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29963008" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine90percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9001233" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

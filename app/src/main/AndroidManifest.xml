@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/knot_tracker_icon_white_and_grey"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/knot_tracker_icon_white_and_grey_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BrightSolutions_KnotTracker"
+        tools:targetApi="31">
+        <activity
+            android:name=".FavouriteList"
+            android:exported="false" />
+        <activity
+            android:name=".SimpleListItemNonLoggedIn"
+            android:exported="false" />
+        <activity
+            android:name=".KnotList"
+            android:exported="false" />
+        <activity
+            android:name=".SimpleListItem"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralKnotsCategory"
+            android:exported="false" />
+        <activity
+            android:name=".LashingKnotsCategory"
+            android:exported="false" />
+        <activity
+            android:name=".WhippingKnotCategory"
+            android:exported="false" />
+        <activity
+            android:name=".HitchKnotCategory"
+            android:exported="false" />
+        <activity
+            android:name=".BasicKnotsCategory"
+            android:exported="false" />
+        <!--
+      the "android:windowSoftInputMode="adjustPan"  fixes the issue of the keyboard pushing the screen up when searching for an entry
+      ref: https://stackoverflow.com/questions/4207880/android-how-do-i-prevent-the-soft-keyboard-from-pushing-my-view-up
+        -->
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".StartupSplash"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashOnStart"
+            android:exported="true"
+            android:theme="@style/Theme.BrightSolutions_KnotTracker.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

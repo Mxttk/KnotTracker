@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_charcoal"
+    android:orientation="vertical"
+    tools:context=".Register"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine25percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontalGuideLine2percent"
+        app:srcCompat="@drawable/knot_tracker_logo_white"
+        tools:ignore="ContentDescription" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine35percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine26percent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/oxanium_bold"
+            android:padding="15dp"
+            android:text="@string/please_fill_in_the_following_fields_then_click_register_to_create_an_account"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/scouts_purple"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextUserName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:drawableStart="@drawable/reg_username"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        android:minHeight="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_2"
+        android:textColorHint="@color/purple_2"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine42percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine90percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine10percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine35percent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextTextFirstNameReg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:drawableStart="@drawable/person_reg"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:minHeight="50dp"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/purple_2"
+        android:textColorHint="@color/purple_2"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine49percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine90percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine10percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine42percent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextTextLastNameReg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:drawableStart="@drawable/person_reg"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:minHeight="50dp"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/purple_2"
+        android:textColorHint="@color/purple_2"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine56percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine90percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine10percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine49percent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:drawableStart="@drawable/email_reg"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_2"
+        android:textColorHint="@color/purple_2"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine63percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine90percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine10percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine56percent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:drawableStart="@drawable/password_reg"
+        android:elevation="10dp"
+        android:ems="10"
+        android:minHeight="50dp"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/purple_2"
+        android:textColorHint="@color/purple_2"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine70percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine90percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine10percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine63percent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextTextPasswordConfirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:drawableStart="@drawable/password_reg"
+        android:elevation="10dp"
+        android:ems="10"
+        android:minHeight="50dp"
+        android:hint="@string/confirm_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/purple_2"
+        android:textColorHint="@color/purple_2"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine77percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine90percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine10percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine70percent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="10dp"
+        android:onClick="registerUser"
+        android:padding="20dp"
+        android:text="@string/register_reg"
+        android:textColor="#311B92"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideLine87percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine80percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine20percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine80percent"
+        tools:ignore="VisualLintBounds,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonBackToMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="10dp"
+        android:onClick="backToMenu"
+        android:padding="10dp"
+        android:text="@string/back_to_menu"
+        android:textColor="#311B92"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalGuideLine96percent"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuideLine75percent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuideLine25percent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalGuideLine89percent"
+        tools:ignore="VisualLintBounds,VisualLintButtonSize" />
+
+    <!-- Vertical Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine10percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine20percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine25percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine75percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine80percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine90percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+
+
+    <!-- Horizontal Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine2percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02020202" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine25percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine26percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26038158" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine35percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35016835" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine42percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41975307" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine49percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49046016" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine56percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine63percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63075197" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine70percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine77percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine80percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="178dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine87percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine89percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89001125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuideLine96percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

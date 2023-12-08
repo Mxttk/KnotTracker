@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KnotList"
+    android:orientation="vertical"
+    android:background="@color/dark_charcoal"
+    tools:ignore="Overdraw">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/purple_200"
+        android:fontFamily="@font/oxanium_bold"
+        android:textColor="@color/scouts_purple"
+        android:padding="22dp"
+        android:text="@string/the_following_list_displays_all_available_knots_within_knottracker_n_nplease_note_that_a_registered_account_is_required_for_knot_tracking_and_other_features"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:padding="10dp"
+        android:text="@string/back_to_menu"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:elevation="10dp"
+        android:onClick="closeWindow"
+        android:textColor="@color/purple_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:id="@+id/recyclerViewAllKnotsKnotList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/body_bg"
+            android:elevation="10dp"
+            tools:listitem="@layout/recyler_item"
+            android:orientation="horizontal" />
+
+</LinearLayout>

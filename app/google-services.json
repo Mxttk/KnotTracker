@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1067921424302",
+    "firebase_url": "https://brightsolutions-knottracker-default-rtdb.firebaseio.com",
+    "project_id": "brightsolutions-knottracker",
+    "storage_bucket": "brightsolutions-knottracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067921424302:android:3341ed3ce937f31d4b123f",
+        "android_client_info": {
+          "package_name": "com.brightsolutions_knottracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067921424302-jhn8tjjvfn19atjicg272po01gb2nhh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1T2dTJKrzkpdvtH5RfnpM5riFa2_MMZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067921424302-jhn8tjjvfn19atjicg272po01gb2nhh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Background design for the profile pic image -->
+    <solid android:color="@color/purple_1"/>
+    <corners
+             android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"/>
+
+</shape>
+
